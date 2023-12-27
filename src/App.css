@@ -1,38 +1,89 @@
-.App {
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway6display=swap");
+
+*{
+  font-family: "Raleway", sans-serif;
+}
+.container{
+  background-color: #560f6181;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+}
+
+.container .title{
+  padding: 20px;
+}
+
+.container .title .txt {
+  font-size: 2.3rem;
+  color: #022b3086;
+}
+
+/* box */
+.box {
+  border: 2px solid rgba(145, 143, 143, 0.482);
+  padding: 5px 30px 30px 30px;
+  background-color: #fff;
+  border-radius: 20px ;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.display{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #444;
+  color: #fff;
+}
+
+.display .inp {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.display .out{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.btn-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-gap: 2px;
+}
+
+.btn-container .btn{
+  background-color: slateblue;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  cursor: pointer;border-radius: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.equal{
+  background-color: green
+  !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.op {
+  background-color: orangered !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red {
+  background-color: #ff2020 !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del{
+  background-color: black !important;
 }
